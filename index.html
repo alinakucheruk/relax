@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relaxation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="headline">
+            To experience relaxation, put on your headphones and choose whatever you'd like</h1>
+        <div class="gif-buttons">
+            <button class="gif-button" onclick="playSound('rain', 'rain.gif')">
+                <img src="rain.gif" alt="Rain" class="gif-img">
+            </button>
+            <button class="gif-button" onclick="playSound('forest', 'forest.gif')">
+                <img src="forest.gif" alt="Forest" class="gif-img">
+            </button>
+            <button class="gif-button" onclick="playSound('sea', 'sea.gif')">
+                <img src="sea.gif" alt="Sea" class="gif-img">
+            </button>
+            <button class="gif-button" onclick="playSound('night', 'night.gif')">
+                <img src="night.gif" alt="Night" class="gif-img">
+            </button>
+            <button class="gif-button" onclick="playSound('lightning', 'lightning.gif')">
+                <img src="lightning.gif" alt="Lightning" class="gif-img">
+            </button>
+        </div>
+        <button class="back-button" onclick="stopSound()">Back</button>
+    </div>
+    <audio id="audio" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
